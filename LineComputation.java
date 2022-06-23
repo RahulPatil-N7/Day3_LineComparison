@@ -13,7 +13,8 @@ public class LineComputation {
 	    System.out.print("Enter the first line-\n"); 
 	    length1 = linecalculation(); 
 	    System.out.print("\nEnter the second line-\n"); 
-	    length2 = linecalculation(); 
+	    length2 = linecalculation();
+	    linecomparison();
 	   }
 	  public static Double linecalculation() 
 	    { 
@@ -30,6 +31,16 @@ public class LineComputation {
 	    	System.out.println("\nlength of the line is :"+length);
 	    	return length;
 	    	}
+	  public static void linecomparison() 
+	    {
+	    	if (length1.equals(length2))
+	    	{ 
+	    		System.out.println("\nBoth the line are equal.");
+	    	} 
+	    	else 
+	    	{
+	    		System.out.println("\nLines are not equal."); 
+	    	}
 	    
 	}
- 
+} 
